@@ -9,7 +9,7 @@ const usersRoutes = require('./routes/users');
 require('dotenv').config();
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://project1-xi-umber.vercel.app/' }));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
